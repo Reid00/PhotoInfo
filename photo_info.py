@@ -53,6 +53,7 @@ class GetPhotoInfo:
 
 
 if __name__ == "__main__":
-    photo=Path(r'D:\python\GitRepository\PhotoInfo\photos/632477919.jpg')
+    root = Path.cwd()
+    photo=root / r'photos/632477919.jpg'
     Main=GetPhotoInfo(photo)
     Main.get_location()
